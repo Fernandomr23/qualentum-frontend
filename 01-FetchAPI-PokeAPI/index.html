@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PokéDex</h1>
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Buscar Pokémon por nombre o ID...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </header>
+
+        <div id="error-container" class="hidden"></div>
+
+        <main>
+            <section id="pokemon-detail" class="hidden">
+                <h2>Detalle del Pokémon</h2>
+                <div id="detail-container"></div>
+                <button id="back-to-list">Volver a la lista</button>
+            </section>
+
+            <section id="pokemon-list">
+                <h2>Lista de Pokémon</h2>
+                <div id="list-container"></div>
+                <div class="pagination">
+                    <button id="prev-btn" disabled>Anterior</button>
+                    <span id="page-info">Página 1</span>
+                    <button id="next-btn">Siguiente</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Desarrollado con JavaScript Vanilla y PokeAPI</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
